@@ -1,0 +1,17 @@
+
+*.pyc
+__pycache__/
+venv/  # Sua pasta de ambiente virtual
+.env   # Arquivos de variáveis de ambiente (se usar)
+
+
+db.sqlite3
+
+
+media/
+static_collected/
+
+
+*.log
+.DS_Store # Arquivos do macOS
+
