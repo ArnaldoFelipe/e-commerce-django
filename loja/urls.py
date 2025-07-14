@@ -25,3 +25,8 @@ urlpatterns = [
     path('pedido/',include('pedido.urls')),
     path('admin/', admin.site.urls),
 ] 
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    # Se você tiver problemas com CSS/JS também, adicione a linha abaixo:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
